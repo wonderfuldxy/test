@@ -1,0 +1,23 @@
+//初始化
+git init
+
+//输入用户邮箱
+git config --global user.email "dongxy@topband.com.cn"
+
+//输入用户密码
+git config --global user.name "dongxy"
+
+//设置电脑的ssh公钥
+ssh-keygen -t rsa -C "dongxy@topband.com.cn"
+
+//设置版本提示语
+git commit -m"Broan_V05_1.3.34_20220107_V2.9.0"
+
+//添加文件夹
+git add Broan_V05
+
+//上传云端
+git remote add origin git@192.168.3.155:dongxy/broan.git
+
+//推送项目
+git push -u origin master
